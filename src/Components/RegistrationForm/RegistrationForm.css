@@ -1,0 +1,67 @@
+
+.form-control {
+    font-size: 16px;
+    transition: all 0.4s;
+    box-shadow: none;
+}
+.form-control:focus {
+    border-color: #F9A51A;
+}
+.form-control .btn {
+    outline: none !important;
+}
+.registration-form {
+    width: 480px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.registration-form form {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid lightgray;
+    padding: 40px;
+}
+.registration-form a {
+    color: #F9A51A;
+}    
+.registration-form h2 {
+    text-align: center;
+    font-size: 34px;
+    margin: 10px 0 15px;
+}
+.registration-form .registration-headline {
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+.registration-form .btn {        
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+.registration-btn {
+    text-align: center;
+    color: black;
+    transition: all 0.4s;
+}
+
+.input-lg{
+  border: none !important;
+  border-bottom: 1px solid lightgray !important;
+  width: 100% !important;
+  
+}
+::placeholder {
+    color: black !important;
+    opacity: 1; /* Firefox */
+  }
+  input{
+      color: black !important;
+  }

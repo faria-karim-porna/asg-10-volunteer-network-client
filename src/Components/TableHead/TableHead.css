@@ -1,0 +1,13 @@
+.table-head-design{
+    margin-top: 2%;
+}
+  .table-head{
+      border-radius: 10px !important;
+      width: 80%;
+      padding: 5px;
+      padding-top: 10px;
+      background-color: #F5F6FA;
+  }
+.table-head > .col > h6{
+    color: #686868;
+}

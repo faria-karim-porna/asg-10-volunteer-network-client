@@ -1,0 +1,16 @@
+.navigation-bar{
+    opacity: 1;
+}
+.nav-link{
+    color: black !important;
+}
+@media (min-width: 768px) {  
+       .try{
+           margin-left: 15%;
+       }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}

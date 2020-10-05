@@ -1,0 +1,10 @@
+.homeCardsImages{
+    height : 300px;
+    position: relative;
+    width: 100%;
+}
+.link:hover{
+    text-decoration: none !important;
+}
+
+
