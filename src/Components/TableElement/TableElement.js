@@ -10,9 +10,8 @@ const TableElement = (props) => {
         })
         .then(res => res.json())
         .then(result => {
-            console.log('deleted')
+            window.location.reload(false)
         })
-        window.location.reload(false);
     }
     return (
         <div className="table-element-design d-flex justify-content-center">

@@ -9,7 +9,7 @@ const VolunteerList = () => {
         fetch('https://arcane-sea-81667.herokuapp.com/allUsers')
         .then(res => res.json())
         .then(data => setAllUserInfo(data))
-    },[])
+    },[allUserInfo])
     return (
         <body>
             <SideNav></SideNav>

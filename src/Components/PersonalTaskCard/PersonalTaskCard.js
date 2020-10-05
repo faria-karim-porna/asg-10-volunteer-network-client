@@ -28,7 +28,7 @@ const PersonalTaskCard = (props) => {
          })
          //history.push("/personalTask")
          //window.setTimeout(function, milliseconds);
-          window.location.reload(false);
+         
      }
     return (
         <div className = "col-md-5 card pt-3 pb-3">

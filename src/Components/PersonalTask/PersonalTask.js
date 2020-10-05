@@ -12,7 +12,7 @@ const PersonalTask = () => {
         fetch('https://arcane-sea-81667.herokuapp.com/personalTask?email='+email)
         .then(res => res.json())
         .then(data => setPersonalTask(data))
-    },[])
+    },[personalTask])
     return (
             
            <div className = "container">

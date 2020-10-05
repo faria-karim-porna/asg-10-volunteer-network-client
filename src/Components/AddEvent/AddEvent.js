@@ -2,7 +2,46 @@ import React, { useState } from 'react';
 import SideNav from '../SideNav/SideNav';
 import cloud from '../../logos/cloud-upload-outline 1.png'
 import './AddEvent.css'
+import { useHistory } from 'react-router-dom';
 const AddEvent = () => {
+    let id = localStorage.getItem('id');
+      id = parseInt(id) + 1;
+     console.log(id);
+     let color = localStorage.getItem('color');
+     let value = id%8;
+     if(value == 5)
+     {
+         color = "#421FCF";
+     }
+     if(value == 6)
+     {
+         color = "#FF7044";
+     }
+     if(value == 7)
+     {
+         color = "#3F90FC";
+     }
+     if(value == 0)
+     {
+         color = "#FFBD3E";
+     }
+     if(value == 1)
+     {
+         color = "#FFBD3E";
+     }
+     if(value == 2)
+     {
+         color = "#3F90FC";
+     }
+     if(value == 3)
+     {
+         color = "#FF7044";
+     }
+     if(value == 4)
+     {
+         color = "#421FCF";
+     }
+    const history = useHistory();
     const [date, setDate] = useState("");
     const [description, setDescription] = useState("");
     const[title, setTitle] = useState("");
@@ -23,9 +62,12 @@ const AddEvent = () => {
 
     const handleSubmit = () => {
         const newEvent = {
+             id: id,
+            activity: title,
+            image: 'extraVolunteer.png',
+             color: color,
             date: date,
             description: description,
-            activity: title,
 
         }
         fetch('https://arcane-sea-81667.herokuapp.com/addEvent', {
@@ -37,7 +79,9 @@ const AddEvent = () => {
         .then(data => {
             console.log(data);
         })
-        //history.push('/personalTask');
+        localStorage.setItem("color",color);
+        localStorage.setItem("id",id);
+        history.push('/home');
         
     }
     return (
